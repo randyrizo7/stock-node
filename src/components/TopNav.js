@@ -9,8 +9,8 @@ import {
 
 function TopNav({ handleOnSelect }) {
   return (
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="/">STOCKIST</Navbar.Brand>
+    <Navbar bg="info" variant="dark">
+      <Navbar.Brand href="/">STOCK Tracker</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
@@ -19,11 +19,11 @@ function TopNav({ handleOnSelect }) {
         </Nav>
         <Form inline>
           <Form.Control onChange={handleOnSelect} as="select" className="mr-sm-2">
-            <option value="active">Most Active </option>
-            <option value="gainers">Most Gainers </option>
-            <option value="losers">Most Losers </option>
+            <option value="active">Active </option>
+            <option value="gainers">Gainers </option>
+            <option value="losers">Losers </option>
           </Form.Control>
-          <Button variant="outline-success">Filter by category</Button>
+          <Button variant="outline-primary">Select</Button>
         </Form>
       </Navbar.Collapse>
     </Navbar>

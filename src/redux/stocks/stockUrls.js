@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 
 dotenv.config();
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = 'f2d19f64e85545852b8dac4b0c8cb0c9';
 
 export const STOCK_LIST_URL = `https://financialmodelingprep.com/api/v3/actives?apikey=${API_KEY}`;
 export const STOCK_GAINERS = `https://financialmodelingprep.com/api/v3/gainers?apikey=${API_KEY}`;

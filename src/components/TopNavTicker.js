@@ -10,8 +10,8 @@ import {
 
 function TopNavTicker({ handleFormClick }) {
   return (
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="/">STOCKIST</Navbar.Brand>
+    <Navbar bg="info" variant="dark">
+      <Navbar.Brand href="/">STOCK</Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="/news">Stock News</Nav.Link>
@@ -23,7 +23,7 @@ function TopNavTicker({ handleFormClick }) {
           className="mr-sm-2"
           name="ticker"
         />
-        <Button type="submit" variant="outline-success">Search</Button>
+        <Button type="submit" variant="outline-primary">Search</Button>
       </Form>
     </Navbar>
   );
